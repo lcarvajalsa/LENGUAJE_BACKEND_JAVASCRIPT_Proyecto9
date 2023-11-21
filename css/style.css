@@ -1,46 +1,136 @@
-    * {
-        background-color: bisque;
-    }
-    
-    body {
-        height: 40%;
-        width: 40%;
-        align-items: center;
-        justify-content: center;
-        background: aqua;
-        display: block;
-        border-radius: 10px;
-    }
-    
-    .eventos {
-        background-color: beige;
-        align-items: center;
-        border-radius: 10px;
-        padding: 5%;
-        margin: 5%;
-        justify-content: flex;
-        border-radius: 10px;
-    }
-    
-    .listaEventos2 {
-        padding: 8px 16px;
-        outline: none;
-        border: none;
-        margin: 0px, 10px;
-        background: hotpink;
-        font-size: 10px;
-        font-weight: 500;
-        border-radius: 0.9rem;
-        box-shadow: 3px 4px 3px 0px honeydew;
-    }
-    
-    input {
-        cursor: pointer;
-        display: flex;
-        border-radius: 10px;
-    }
-    
-    button {
-        cursor: pointer;
-        border-radius: 10px;
-    }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to top, #17d430da, #ce7d14);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center bottom;
+}
+
+.principal_imagen {
+    display: flex;
+    justify-content: space-around;
+}
+
+.principal_imagen h2 {
+    margin-top: 10px;
+}
+
+.imagen {
+    width: 50px;
+    margin-left: 20px;
+}
+
+.eventos {
+    border-radius: 20px;
+    margin: 20px 20px;
+    padding: 25px;
+    width: 45vh;
+    background-color: rgb(19, 18, 92);
+    box-shadow: inset 0px 0px 20px 5px rgb(209, 202, 202);
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario input {
+    border: 1px solid rgb(231, 169, 190);
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    margin: 5px;
+    height: 30px;
+}
+
+.formulario #agregar {
+    background-color: rgb(231, 147, 21);
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    margin-top: 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+#agregar:hover {
+    background: rgb(88, 142, 146);
+}
+
+.derechosAutor a {
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.listaEventos2 {
+    border: 2px solid rgb(110, 67, 114);
+    border-radius: 10px;
+    display: auto;
+    box-shadow: inset 0px 0px 20px 5px rgb(240, 230, 236);
+}
+
+.evento {
+    display: auto;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    border: 2px solid rgb(199, 241, 9);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    width: 600px;
+}
+
+.dias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.diasFaltantes {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.nombreEvento {
+    width: 100px;
+    height: 50px;
+    overflow: auto;
+}
+
+.eliminar {
+    border: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    background: #3f9158;
+    cursor: pointer;
+}
+
+.eliminar:hover {
+    background: rgb(180, 9, 9);
+}
